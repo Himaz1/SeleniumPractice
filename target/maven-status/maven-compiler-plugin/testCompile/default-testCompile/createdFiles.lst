@@ -1,0 +1,15 @@
+com\qa\regression\HimazTestPageRegTwo.class
+com\restapi\testcases\TC001GetAllEmpData.class
+com\qa\testcases\ParallelExec.class
+com\qa\regression\HimazTestPageRegOne.class
+com\qa\regression\PracticeTestNGRegOne.class
+com\qa\regression\PracticeTestNGRegTwo.class
+com\qa\smoke\PracticeTestNGSmokeOne.class
+com\qa\testcases\LandingPageTest.class
+com\qa\testcases\HimazTestPage.class
+com\qa\smoke\HimazTestPageSmokeTwo.class
+com\qa\smoke\PracticeTestNGSmokeTwo.class
+com\qa\ExtentReportListener\ExtentReporterNG.class
+com\qa\testcases\PracticeTestNG.class
+com\qa\smoke\HimazTestPageSmokeOne.class
+com\restapi\base\RestBase.class

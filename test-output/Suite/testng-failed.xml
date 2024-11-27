@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test in chrome(failed)">
+    <classes>
+      <class name="com.qa.testcases.HimazTestPage">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.testcases.HimazTestPage -->
+      <class name="com.qa.testcases.LandingPageTest">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="setUp"/>
+          <include name="verifyUserLoginWithPreviousCredentials"/>
+          <include name="verifyUserRegistrationAndCreatePastBook"/>
+        </methods>
+      </class> <!-- com.qa.testcases.LandingPageTest -->
+    </classes>
+  </test> <!-- Test in chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

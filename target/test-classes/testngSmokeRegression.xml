@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite Smoke and Regression">
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+  <!-- Smoke Test Suite -->
+  <test thread-count="5" name="Smoke Test">
+	<classes>
+		<class name="com.qa.smoke.HimazTestPageSmokeOne"/>
+		<class name="com.qa.smoke.HimazTestPageSmokeTwo"/>
+		<class name="com.qa.smoke.PracticeTestNGSmokeOne"/>
+		<class name="com.qa.smoke.PracticeTestNGSmokeTwo"/>
+    </classes>
+  </test> <!-- Test -->	
+  
+  <!-- Regression Test Suite -->
+  <test thread-count="5" name="Regression Test">
+	<classes>
+		<class name="com.qa.regression.HimazTestPageRegOne"/>
+		<class name="com.qa.regression.HimazTestPageRegTwo"/>
+		<class name="com.qa.regression.PracticeTestNGRegOne"/>
+		<class name="com.qa.regression.PracticeTestNGRegTwo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
