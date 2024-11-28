@@ -28,6 +28,7 @@ public class TableUtils {
 
         // Get the row count after waiting for the table to load
         int rowCount = getTableRowCount(driver, "dynamicTable");
+        System.out.println(getTableRowCount(driver, "dynamicTable"));
 
         System.out.println("Number of rows in the table: " + rowCount);
         //driver.close();
