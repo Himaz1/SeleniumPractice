@@ -9,6 +9,7 @@ public class CompareTwoString {
 		System.out.println(name.equalsIgnoreCase(nameOne));
 		
 		System.out.println("Testing One");
+		System.out.println("Testing Two");
 	}
 
 }
