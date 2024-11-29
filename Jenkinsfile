@@ -27,7 +27,7 @@ pipeline {
             steps {
                 // Run your smoke tests using the testng.xml suite file
                 script {
-                    sh 'mvn clean test -DsuiteXmlFile=src/test/java/testngSmoke.xml'
+                    sh 'mvn clean test -DsuiteXmlFile=src/test/resources/testngSmoke.xml'
                 }
             }
         }
