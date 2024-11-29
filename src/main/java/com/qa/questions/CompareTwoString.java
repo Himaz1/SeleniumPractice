@@ -7,6 +7,8 @@ public class CompareTwoString {
 		
 		System.out.println(name.equals(nameOne));
 		System.out.println(name.equalsIgnoreCase(nameOne));
+		
+		System.out.println("Testing One");
 	}
 
 }
