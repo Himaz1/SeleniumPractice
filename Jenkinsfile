@@ -2,8 +2,12 @@ pipeline {
     agent any  // This means the pipeline can run on any available agent
 
     environment {
-        MAVEN_HOME = '/usr/bin/mvn' // Path to Maven in the Docker container
         MAVEN_OPTS = '-Xms256m -Xmx512m'
+    }
+
+    tools {
+        maven 'Maven 3.9.9'  // The name you gave the Maven installation in Global Tool Config
+        jdk 'JDK 11'         // The name you gave the JDK installation in Global Tool Config
     }
 
     stages {
