@@ -15,12 +15,5 @@
     </classes>
   </test> <!-- Test -->
   
-  <!--<test thread-count="5" name="Test in firefox">
-	  <parameter name="browser" value="ff"></parameter>
-    <classes>
-      <class name="com.qa.testcases.LandingPageTest"/>
-      <class name="com.qa.testcases.HimazTestPage"/>
-    </classes>
-  </test>--> <!-- Test -->
-  
+    
 </suite> <!-- Suite -->
