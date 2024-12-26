@@ -1,5 +1,7 @@
 package com.qa.pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -21,7 +23,7 @@ public class HimazPage extends TestBase{
 	
 	
 	
-	public HimazPage()
+	public HimazPage() throws IOException
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -31,7 +33,7 @@ public class HimazPage extends TestBase{
 		return driver.getTitle();
 	}
 	
-	public HomePage login(String username, String pass) throws InterruptedException
+	public HomePage login(String username, String pass) throws InterruptedException, IOException
 	{
 		btn_login.click();
 		tf_username.sendKeys(username);

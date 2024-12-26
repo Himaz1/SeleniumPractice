@@ -1,5 +1,6 @@
 package com.qa.testcases;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,13 +24,13 @@ public class LandingPageTest extends TestBase{
 public LandingPage landingPage;
 	
 	
-	public LandingPageTest()
+	public LandingPageTest() throws IOException
 	{
 		super();
 	}
 	
 	@BeforeMethod
-	public void setUp()
+	public void setUp() throws IOException
 	{
 		initialization();
 		landingPage = new LandingPage();

@@ -1,5 +1,7 @@
 package com.qa.regression;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -15,13 +17,13 @@ public class HimazTestPageRegTwo extends TestBase {
 	public HimazTestPage himazTestPage;
 	public HimazPage himazPage;
 	
-	public HimazTestPageRegTwo()
+	public HimazTestPageRegTwo() throws IOException
 	{
 		super();
 	}
 	
 	@BeforeMethod
-	public void setUp()
+	public void setUp() throws IOException
 	{
 		initialization();
 		himazTestPage = new HimazTestPage();

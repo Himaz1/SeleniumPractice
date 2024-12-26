@@ -1,5 +1,6 @@
 package com.qa.pages;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -20,7 +21,7 @@ public class LandingPage extends TestBase{
 	@FindBy(xpath = "//a[@class='icon-off']")
 	WebElement lnk_signOut;
 	
-	public LandingPage()
+	public LandingPage() throws IOException
 	{
 		PageFactory.initElements(driver, this);
 	}

@@ -33,7 +33,7 @@ public class SearchValTable {
                 System.out.println(name);
 
                 // Check if the name matches "test"
-                if (name.equalsIgnoreCase("Alice Johnson")) {
+                if (name.equalsIgnoreCase("Frank Black")) {
 
                     // Find the checkbox in the first column (index 0)
                     WebElement checkbox = columns.get(0).findElement(By.tagName("input"));

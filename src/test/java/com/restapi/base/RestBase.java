@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.BeforeClass;
 
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -21,6 +22,9 @@ public class RestBase {
 		logger=Logger.getLogger("EmployeeRestAPi");//added logger
 		PropertyConfigurator.configure("Log4j.properties");//added logger
 		logger.setLevel(Level.DEBUG);
+		
+		RestAssured.baseURI = "https://reqres.in/";
+		httpRequest = RestAssured.given();
 		
 	}
 	

@@ -1,5 +1,6 @@
 package com.qa.testcases;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,13 +24,13 @@ public class HimazTestPage extends TestBase{
 	public HimazTestPage himazTestPage;
 	public HimazPage himazPage;
 	
-	public HimazTestPage()
+	public HimazTestPage() throws IOException
 	{
 		super();
 	}
 	
 	@BeforeMethod
-	public void setUp()
+	public void setUp() throws IOException
 	{
 		initialization();
 		himazTestPage = new HimazTestPage();

@@ -20,18 +20,19 @@ public class DynamicTable {
 		WebElement table = driver.findElement(By.id("dataTable"));
 		WebElement tbody = table.findElement(By.tagName("tbody"));
 		List<WebElement> list = tbody.findElements(By.tagName("tr"));
-		//System.out.println("Row count is: " + list.size());
+		System.out.println("Row count is: " + list.size());
 		int rowCount = 0;
-		rowCount = list.size();
+		//rowCount = list.size();
 		WebElement nextBtn = driver.findElement(By.id("nextBtn"));
 		
 		do {
-			nextBtn.click();
+			//nextBtn.click();
 			WebElement table1 = driver.findElement(By.id("dataTable"));
 			WebElement tbody1 = table1.findElement(By.tagName("tbody"));
 			List<WebElement> list1 = tbody1.findElements(By.tagName("tr"));
 			//System.out.println("Row count is: " + list.size());
 			rowCount += list1.size();
+			nextBtn.click();
 			
 		} while (nextBtn.isEnabled());
 		System.out.println("Total row count across all pages: " + rowCount);
